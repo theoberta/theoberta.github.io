@@ -1,0 +1,254 @@
+body {
+	margin: 0;
+	padding: 0;
+	color: #4a5f6e;
+	font-family: 'Work Sans', sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/*header*/
+
+header {
+	padding: 20px 0 15px 0;
+}
+
+h1 {
+	display: inline-block;
+	width: 50%;
+	text-align: left;
+	vertical-align: bottom;
+	font-size: 4em;
+}
+
+h2 {
+	display: inline-block;
+	width: 50%;
+	text-align: right;
+	vertical-align: bottom;
+}
+
+h1, h2, h4 {
+	margin:0;
+	font-weight: 400;
+}
+
+h4 {
+	font-size: 1.5em;
+}
+
+.devider {
+	background-color: #afbfc9;
+	height: 2px;
+}
+
+/*main*/
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.project {
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	padding: 50px 20px;
+	vertical-align: top;
+	text-align: center;
+}
+
+img {
+	margin: 0 auto;
+	position: relative;
+	-webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.img-wrap {
+	position: relative;
+	text-align: center;
+}
+
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+
+.overlay p {
+	font-size: 1.3em;
+	opacity: 0;
+	padding: 10px;
+	color: white;
+	background-color:  rgba(74,95,110,0.85);
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	transform: translateY(-50%);
+	-webkit-transition: all 0.2s ease-in;
+  	transition: all 0.2s ease-in;
+}
+
+.img-wrap:hover img {
+	cursor: pointer;
+	opacity: 0.7;
+	filter: blur(1px);
+	-webkit-filter: blur(1px);
+}
+
+.img-wrap:hover .overlay p {
+	opacity: 1;
+}
+
+.work-headline {
+	margin: 10px 0;
+}
+
+.work-img {
+	border: 1px solid #cedce6;
+}
+
+a {
+	color: #afbfc9;
+}
+
+li {
+	text-align: left;
+}
+
+h5 {
+	text-align: left;
+	margin-bottom: 5px;
+	font-size: 1em;
+}
+
+ul {
+	padding-left: 20px;
+	line-height: 1.2em;
+	font-size: 1em;
+	flex-grow: 1;
+}
+
+.devider2 {
+	background-color: rgba(175,191,201,0.3);
+	height: 1px;
+}
+
+
+/*modal*/
+
+.modal p {
+	margin-top: 10px;
+}
+
+/*carousel-control*/
+
+.carousel-control {
+	width: 10%;
+	opacity: 1;
+}
+
+.carousel-control.right, .carousel-control.left {
+	background-image: none;
+}
+
+.glyphicon {
+	color: #4a5f6e;
+	opacity: 0.7;
+}
+
+/*footer*/
+
+footer {
+	text-align: center;
+	padding: 15px 0 40px 0;
+}
+
+/*media query 992*/
+
+@media (max-width: 992px) {
+
+	.project {
+		padding: 30px 15px;
+		width: 50%;
+	}
+
+	h1 {
+		font-size: 3em;
+	}
+
+	h2 {
+		font-size: 2em;
+	}
+}
+
+/*media query 768*/
+
+@media (max-width: 768px) {
+	.project {
+		padding: 20px 15px;
+	}
+}
+
+/*media query 580*/
+
+@media (max-width: 670px) {
+
+	h1 {
+		font-size: 2.2em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+
+	}
+
+	h4 {
+		font-size: 1.2em;
+	}
+}
+
+/*media query 580*/
+
+@media (max-width: 580px) {
+
+	h1, h2 {
+		text-align: center;
+		display: block;
+		width: 100%;
+	}
+
+	.project {
+		padding: 15px;
+		width: 100%;
+		display: block;
+	}
+}
+
+
+/*media query 370*/
+
+@media (max-width: 370px) {
+
+	.project {
+		padding: 10px;
+	}
+
+	.work-headline {
+	margin: 7px 0;
+	}
+
+	.modal-body {
+		font-size: 80%;
+	}
+
+	ul {
+		padding-left: 20px;
+	}
+}
